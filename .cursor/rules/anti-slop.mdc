@@ -1,0 +1,32 @@
+---
+description: Aturan anti-slop dan design system editorial untuk UI Tebing Breksi
+globs: **/*.{tsx,jsx,ts,js,css,html}
+alwaysApply: true
+---
+
+# Anti-Slop & Editorial Design Rules (Tebing Breksi)
+
+Ikuti panduan ketat ini saat membuat atau memodifikasi komponen UI:
+
+## 1. HARD GATES (Pantangan Mutlak)
+- DILARANG menggunakan background glow, blur blob, atau neon purple/indigo gradients (`from-purple-600 to-indigo-600`).
+- DILARANG menggunakan glassmorphism gelap pekat (`backdrop-blur bg-white/5`).
+- DILARANG menggunakan bento grid klise 3-kolom seragam dengan ikon klise (Zap, Rocket, Shield).
+- DILARANG menulis headline robotik: ("Supercharge your travel", "Experience the extraordinary"). Gunakan copy manusiawi, informatif, dan relevan dengan Tebing Breksi.
+- DILARANG menggunakan warna hijau cerah `#38C172`, warna emas, krem, atau warna default Tailwind di luar token resmi.
+
+## 2. DESIGN TOKENS (Sesuai Dokumen/02-desain-ui-ux.md)
+- Heading: `Playfair Display` (font serif elegan, berwibawa).
+- Body/UI: `DM Sans` (font sans-serif modern, mudah dibaca).
+- Palet Warna:
+  * Black: `#000000`
+  * Charcoal: `#1A1A1A`
+  * White: `#FFFFFF`
+  * Gray 100: `#F0F2F5` (background halaman)
+  * Border: `#E1E4E8` (solid 1px, no gradient borders)
+  * Aksen Teal: `#00A3BF` (HANYA untuk ikon kecil, badge status, indikator aktif, atau angka metrik besar). Jangan pakai teal untuk teks paragraf biasa.
+
+## 3. CHECKLIST SEBELUM SELESAI (DELIVERY GATE)
+- Lolos kontras teks WCAG AA (minimal 4.5:1).
+- Responsif mobile-first (uji lebar 360px - 414px).
+- Tidak ada elemen visual tanpa alasan fungsional bagi pengunjung wisata.
